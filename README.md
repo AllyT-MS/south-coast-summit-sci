@@ -3,7 +3,7 @@
 
 ## Identity Labs
 
-![image](https://github.com/AllyT-MS/south-coast-summit-sci/blob/master/scs.png)
+![image](https://github.com/AllyT-MS/south-coast-summit-sci/scs.png)
 
 **Lab 1 - Passwordless**
 https://github.com/AllyT-MS/south-coast-summit-sci/blob/master/identity/lab1.md
