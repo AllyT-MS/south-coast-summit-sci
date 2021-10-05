@@ -1,12 +1,12 @@
 # Welcome to the Lab repository for South Coast Summit  SCI Lab Track
 ----------------------------------------------------------------------------------------------------
 
-## Identity Labs
-
 ![image](https://github.com/AllyT-MS/south-coast-summit-sci/blob/main/scs.png)
 
+## Identity Labs
+
 **Lab 1 - Passwordless**
-https://github.com/AllyT-MS/south-coast-summit-sci/blob/master/identity/lab1.md
+https://github.com/AllyT-MS/south-coast-summit-sci/blob/main/identity/lab1.md
 
 **Lab 2 - Passwordless**
 
