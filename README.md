@@ -11,17 +11,41 @@ The OpenHack consists of a series of challenges that reflect the experiences an 
 
 Most teams will **not** complete all the challenges within the time available. This is by-design (it is better to have some stretch-goal challenges for experienced attendees who may get through the challenges unusually quickly than to run out of challenges partway through the event!)
 
-## Challenge 1
+Contoso are a fictitious company who showcase the future of SCI. 
 
-**Scenarios goal**: Collect and discuss the different security and compliance reporting tools that are available as well as methods by which identified improvements or business requirements can be implemented.
+1 - Select a challenge (Complete challenge 1 then any order)
+	· There are multiple distinct challenges set out within the South Coast Summit Hackathon case study. The focus of these challenges is to learn new skills, ask questions and learn about Zero Trust, Microsoft Identity, Microsoft Defender and Data Compliance.
+2 - Learn together
+	· The idea is to share knowledge and ask questions, make your team mates aware of your level of knowledge when it comes to the particular task or tasks at hand and try to chip in as much as possible and remember no questions are silly questions.
+3 - Be creative and have fun!
 
-The teams should not implement any improvements at this time. This challenge is intended to drive conversation among the team members and discovery of Microsoft 365 platform. 
+## Challenge 1 - Secure Score
 
-## Challenge 2
+**Scenario goal:** Discuss the identified Microsoft 365 Secure Score improvements and implement top 3-5 corrective actions. 
 
-**Scenario goal:** Discuss the identified Microsoft 365 Secure Score improvements and implement corrective actions. 
+## Challenge 2 - Identity & Access Management
 
-## Challenge 3
+**Scenario goal:** Configure conditional access policies to support different security group requirements based on business rules. Configure privileged identity management rules to elevate permissions only when necessary. Establish alerting for risky sign in behavior and enforce a password change policy for sign ins identified as Medium or High.
+
+### General
+
+Solution should include creating the following:
+
+- Conditional access rule for that will enforce MFA for users assigned the Password Administrators role.
+
+- Conditional Access rule for the "General Staff" group that allow them to work from anywhere but enforces MFA if not at a trusted location. 
+
+- Conditional Access rule for the "Financial System Access" group. These members can only log on from trusted locations. 
+
+- When testing the conditional access policies, team members can impersonate the volunteer users.
+
+- Trusted locations defined with at least one IP address of a trusted location to sign in from. One of the public IP addresses of a team member is an example of a trusted location access.  
+
+- Identity Protection policy setup to enforce password change when any users risk level is set to Medium or High. If students cannot simulate a risk event to trigger this rule, then at least check that they have the policy configured on PIM.
+
+- Privileged Identity Management configured to assign the "Password Administrator" role to Julian Isla, but their default role is User as observed in their profile.
+
+## Challenge 3 - Compliance Manager
 
 **Scenario goal:** The team must work together to identify necessary compliance improvement actions and implement the actions where possible. The Compliance manager in Microsoft 365 assessments and regulatory compliance in the Azure Security center will be used to identify the improvement actions.
 
@@ -39,7 +63,7 @@ For actions that cannot be performed in the OH environment, the team member must
 The team will report their finding to the coaches
 
 
-## Challenge 4
+## Challenge 3 - Information Protection and Governance + Insider Risk Management
 
 **Scenario goal:** Deploy policies and configurations that support information protection and governance and insider risk management. 
 
@@ -71,29 +95,8 @@ Insider risk management:
 
 - Created a data theft by departing users policy
 
-## Challenge 5
 
-**Scenario goal:** Configure conditional access policies to support different security group requirements based on business rules. Configure privileged identity management rules to elevate permissions only when necessary. Establish alerting for risky sign in behavior and enforce a password change policy for sign ins identified as Medium or High.
-
-### General
-
-Solution should include creating the following:
-
-- Conditional access rule for that will enforce MFA for users assigned the Password Administrators role.
-
-- Conditional Access rule for the "General Staff" group that allow them to work from anywhere but enforces MFA if not at a trusted location. 
-
-- Conditional Access rule for the "Financial System Access" group. These members can only log on from trusted locations. 
-
-- When testing the conditional access policies, team members can impersonate the volunteer users.
-
-- Trusted locations defined with at least one IP address of a trusted location to sign in from. One of the public IP addresses of a team member is an example of a trusted location access.  
-
-- Identity Protection policy setup to enforce password change when any users risk level is set to Medium or High. If students cannot simulate a risk event to trigger this rule, then at least check that they have the policy configured on PIM.
-
-- Privileged Identity Management configured to assign the "Password Administrator" role to Julian Isla, but their default role is User as observed in their profile.
-
-## Challenge 7
+## Challenge 4 - Microsoft 365 Defender
 
 **Scenario goal:** 
 The team must run a simulated attack against a test device in the Microsoft Defender Security Center. Once complete, the team should be able to identify different elements of the attack. Additionally, the team must create one advanced hunting rule that identifies antivirus reports from a specific target device. 
@@ -102,7 +105,7 @@ The team must run a simulated attack against a test device in the Microsoft Defe
 
 At the completion of this challenge, the team will have successfully executed the ATP29 attack simulation against one of the test devices. They will have created and saved an advanced hunting query.
 
-## Challenge 8
+## Challenge 5 - Endpoint Management
 
 **Scenario goal:** 
 
