@@ -17,7 +17,8 @@ Contoso are a fictitious company who showcase the future of SCI.
 	· There are multiple distinct challenges set out within the South Coast Summit Hackathon case study. The focus of these challenges is to learn new skills, ask questions and learn about Zero Trust, Microsoft Identity, Microsoft Defender and Data Compliance.
 **2 - Learn together**
 	· The idea is to share knowledge and ask questions, make your team mates aware of your level of knowledge when it comes to the particular task or tasks at hand and try to chip in as much as possible and remember no questions are silly questions.
-**3 - Be creative and have fun!**
+**3 - Show the coaches what you have impleneted before moving onto next challenge**
+**4 - Be creative and have fun!**
 
 ## Challenge 1 - Secure Score
 
