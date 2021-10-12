@@ -26,8 +26,9 @@ The idea is to share knowledge and ask questions, make your team mates aware of 
 ## Challenge 1 - Secure Score
 
 **Scenario goal:** Discuss the identified Microsoft 365 Secure Score improvements and implement the corrective actions to meet the goals below:
-- Identify the first 10-15 improvement actions found in your company’s Microsoft 365 Secure score. The CIO knows not all improvement actions can be implemented over night. Implement at least 3 controls within this list
-- All accounts must have multi-factor authentication enabled
+- Identify the first 10-15 improvement actions found in your company’s Microsoft 365 Secure score.
+- The CIO knows not all improvement actions can be implemented over night however he would like you to make a start.  Implement at least three improvement actions
+- The improvement actions should have their status updated, such as 'Planned' when an implementation is not performed.
 
 ## Challenge 2 - Identity & Access Management
 
@@ -36,12 +37,10 @@ The idea is to share knowledge and ask questions, make your team mates aware of 
 ### General
 
 In addition to the scenario goal it MUST also meet the following criteria:
+- All accounts must have multi-factor authentication enabled
 - Passwords should not be set to expire
-
 - Enforce MFA for users assigned the Password Administrators role.
-
 - The "Marketing" group should be allowed to work from anywhere but enforce MFA if not at a trusted location. 
-
 - The "Finance Team" group -  These members can only log on from trusted locations. 
 
 Helpful notes
@@ -55,28 +54,27 @@ Helpful notes
 
 ## Challenge 3 - Compliance Manager
 
-**Scenario goal:** The team must work together to identify necessary compliance improvement actions and implement the actions where possible. The Compliance manager in Microsoft 365 assessments and regulatory compliance in the Azure Security center will be used to identify the improvement actions.
+**Scenario goal:** The team must work together to identify necessary compliance improvement actions and implement the actions where possible. The Compliance manager in Microsoft 365 assessments will be used to identify the improvement actions. As Contoso has offices within the UK and EU it must meet the EU GDPR regulations and UK Cyber Essentials.
 
-Each team member will be assigned or select three improvement actions whose control maps to all three assessments. If this is not possible, choose the improvement actions that have two or more.  
-The team members will:
-
+Each team should select three improvement actions whose control maps to the appropriate assessments. If this is not possible, choose the improvement actions that have two or more.  
+The team will:
+- Discover within the assesment which actions are Microsoft's responsibility
 - Implement the corrections and test.
-
 - Update the implementation status and test status.
-
 - Verify remediation has been updated in the assessment.  
 
+
 The points achieved should increase as improvement actions are completed and the status updated.
-For actions that cannot be performed in the OH environment, the team member must be able to describe how this was implemented and tested.  
+If there is a delay with the new assessments being run you can choose the Data Protection Baseline and implement actions from this instead.   
 The team will report their finding to the coaches
 
 
-## Challenge 3 - Information Protection and Governance + Insider Risk Management
+## Challenge 4 - Information Protection and Governance + Insider Risk Management
 
 **Scenario goal:** So far, your team has been able to address some of the security and compliance concerns and implemented improvements to increase Contoso's protective posture. The CIO is concerned about customer data not being properly handled and being exfiltrated from the organization, both intentionally and unintentionally. This data is composed of PII, bank account information, and credit card information.The CISO has directed your team to institute policies to help with the labeling of content. Any content created in Office 365 needs to be labeled as “General” and, if any label is downgraded, a business justification must be provided. If any content contains customer data, it must be automatically labeled as “Highly Confidential” and needs to be visibly marked as such. 
 The legal team, and only the legal team, needs the same automatic labeling for customer content available to them. They also need the ability to manually mark content as Attorney Client Privilege. Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
 
-### Protection and Governance
+### Part 1 - Protection and Governance
 - Your team must implement measures designed to protect the company’s data and mark it in accordance with company policy.
 - The company has a documented data classification scheme of Public, General, Confidential, and Highly Confidential. Customer data is considered Highly Confidential and should be treated as such. In addition to the above classification scheme, members of Contoso Legal group have the additional requirements for protecting data that is attorney client privileged and only members of Legal should have access to it.
 - General -  Any content created in Office 365 needs to be labeled as “General”
@@ -89,7 +87,7 @@ The legal team, and only the legal team, needs the same automatic labeling for c
 	    b) if any label is downgraded, a business justification must be provided.
 	    c) Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
 
-### Insider risk management
+### Part 2 -  Insider risk management
 Contoso Legal and HR have become very concerned about the threat posed by employees leaving the organization after an incident they had last year where a few employees left to start their own mortgage brokerage and took customer lists with them. Luckily, Contoso Mortgage found out due to one of the employees accidentally emailing a copy of the customer list they had stolen to someone still at Contoso. Legal and HR would like to be alerted to potentially risky behavior for employees who have given notice and may be taking part in. They would like to focus on data that contains customer data or content labeled Confidential or Higher. The only employee who has given notice in the past week has been Eric Gilmore.
 Success Criteria
 • Verify and implement the company’s classification scheme using sensitivity policies and labels.
@@ -107,7 +105,7 @@ The team must run an attack delivered by SafeBreach that simulates techniques su
 
 The team must run a simulated attack against a test device in the Microsoft Defender Security Center. Once complete, the team should be able to identify different elements of the attack. Additionally, the team must create one advanced hunting rule that identifies antivirus reports from a specific target device. 
 
-### Defender for Endpoint
+### Part 1 - Defender for Endpoint
 
 After the simulation is complete, the team must identify any high severity incidents. The team must be able to answer the following questions:
 1. What categories does the incident fall under?
@@ -115,7 +113,7 @@ After the simulation is complete, the team must identify any high severity incid
 3. If there was malware, what malware was identified?
 4. Can a hacker or bad actor group be identified? If so, who?
 
-### Defender for Office 365
+### Part 2 - Defender for Office 365
 Contoso Mortgage has had regular annual cyber security training for its employees for nearly three years. In the past, the CIO has chosen not to use any in-house or third-party email-based attack simulations and relied on the online training to educate employees. With most employees now working remotely, this is being reconsidered. Your team must use the available attack simulator feature to execute simulated attacks. Using the two spear phishing attacks, launch an attack targeting members of your team. After team members receive the emails, review the messages, and brief the team on identified items that should alert the recipient of danger. Be prepared to explain your findings to the CISO. Additionally, each one of the attack messages’ payloads should be triggered for the team to understand the simulated attack experience. The CISO is okay with the team creating their own templates or using the built-in templates.
 
 In addition to the goals above the following MUST also be met:
