@@ -130,7 +130,7 @@ In addition to the goals above the following MUST also be met:
 Contoso is moving from their traditional on-premises based device hygiene and management system to their already licensed Microsoft Endpoint Manager integrated endpoint management platform. Microsoft Intune in Endpoint Manager will be used for the mobile device and application management of Windows, macOS, iOS, and Android devices. 
 The initial focus will be on company purchased hardware that has been issued to the employees and Windows devices in particular. All Windows devices will eventually be enrolled in Microsoft Intune automatically.
 
-Larry Zhang, a member of the Help Desk group, will work with the team to help test the planned Windows devices’ automatic enrollment and compliance configurations before including all employees in automatic enrollment.
+Allan Deyoung will be delviering the EndPoint Manager features so will need to be given appropriate permissions, including being a member of the Help Desk group. He will lead the team to help test the planned Windows devices’ automatic enrollment and compliance configurations before including all employees in automatic enrollment.
 
 Prior to launching simulated attacks, the CISO wants the team to integrate Microsoft Defender for Endpoint with Microsoft Intune as a mobile threat defense solution
 
