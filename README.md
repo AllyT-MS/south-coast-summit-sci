@@ -150,6 +150,20 @@ Success Criteria
 • Create an access control policy to protect Office 365 apps.
 • Enroll test laptop (ask coach to borrow one) in device management.
 
+## Challenge 6 - Identity Governance
+
+**Scenario goal:** Configure access reveiws on all guest users in the tenants to ensure no guests have extended access to resources when they no longer need them. Create an access package to allow internal users to request access to a set of Teams with an audited approval process.
+
+### General
+
+In addition to the scenario goal it MUST also meet the following criteria:
+- If a review is not received for guest users, their access should be revoked
+- All internal employees should be able to request access to the access package
+- Users' line managers should provide the first level of approval
+- Named HR users should provide the second level of approval
+
+Helpful notes
+- When testing the access packages it is useful to have people signed in as each role to ensure the approval process works as intended
 
 Link to this repo - https://aka.ms/scs-sci-repo
 
