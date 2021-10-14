@@ -42,15 +42,13 @@ In addition to the scenario goal it MUST also meet the following criteria:
 - Enforce MFA for users assigned the Password Administrators role.
 - The "Marketing" group should be allowed to work from anywhere but enforce MFA if not at a trusted location. 
 - The "Finance Team" group -  These members can only log on from trusted locations. 
+- Use an Identity Protection policy to enforce password change when any users risk level is set to Medium or High. If students cannot simulate a risk event to trigger this rule, then at least check that they have the policy configured on PIM.
+- Privileged Identity Management must be configured to assign the "Password Administrator" role to Julian Isla, but their default role is User as observed in their profile.- 
 
 Helpful notes
 - When testing the conditional access policies, team members can impersonate the volunteer users.
-
 - Trusted locations defined with at least one IP address of a trusted location to sign in from. One of the public IP addresses of a team member is an example of a trusted location access.  
 
-- Identity Protection policy setup to enforce password change when any users risk level is set to Medium or High. If students cannot simulate a risk event to trigger this rule, then at least check that they have the policy configured on PIM.
-
-- Privileged Identity Management configured to assign the "Password Administrator" role to Julian Isla, but their default role is User as observed in their profile.
 
 ## Challenge 3 - Compliance Manager
 
