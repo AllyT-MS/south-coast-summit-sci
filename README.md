@@ -40,10 +40,10 @@ In addition to the scenario goal it MUST also meet the following criteria:
 - All accounts must have multi-factor authentication enabled
 - Passwords should not be set to expire
 - Enforce MFA for users assigned the Password Administrators role.
-- The "Marketing" group should be allowed to work from anywhere but enforce MFA if not at a trusted location. 
-- The "Finance Team" group -  These members can only log on from trusted locations. 
+- The "Sales & Marketing" group should be allowed to work from anywhere but enforce MFA if not at a trusted location. 
+- The "Leadership" group -  These members can only log on from trusted locations. 
 - Use an Identity Protection policy to enforce password change when any users risk level is set to Medium or High. If students cannot simulate a risk event to trigger this rule, then at least check that they have the policy configured on PIM.
-- Privileged Identity Management must be configured to assign the "Password Administrator" role to Julian Isla, but their default role is User as observed in their profile.- 
+- Privileged Identity Management must be configured to assign the "Password Administrator" role to Lee Gu, but their default role is User as observed in their profile.- 
 
 Helpful notes
 - When testing the conditional access policies, team members can impersonate the volunteer users.
@@ -70,11 +70,11 @@ The team will report their finding to the coaches
 ## Challenge 4 - Information Protection and Governance + Insider Risk Management
 
 **Scenario goal:** So far, your team has been able to address some of the security and compliance concerns and implemented improvements to increase Contoso's protective posture. The CIO is concerned about customer data not being properly handled and being exfiltrated from the organization, both intentionally and unintentionally. This data is composed of PII, bank account information, and credit card information.The CISO has directed your team to institute policies to help with the labeling of content. Any content created in Office 365 needs to be labeled as “General” and, if any label is downgraded, a business justification must be provided. If any content contains customer data, it must be automatically labeled as “Highly Confidential” and needs to be visibly marked as such. 
-The legal team, and only the legal team, needs the same automatic labeling for customer content available to them. They also need the ability to manually mark content as Attorney Client Privilege. Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
+The safety team, and only the safety team, needs the same automatic labeling for customer content available to them. They also need the ability to manually mark content as Attorney Client Privilege. Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
 
 ### Part 1 - Protection and Governance
 - Your team must implement measures designed to protect the company’s data and mark it in accordance with company policy.
-- The company has a documented data classification scheme of Public, General, Confidential, and Highly Confidential. Customer data is considered Highly Confidential and should be treated as such. In addition to the above classification scheme, members of Contoso Legal group have the additional requirements for protecting data that is attorney client privileged and only members of Legal should have access to it.
+- The company has a documented data classification scheme of Public, General, Confidential, and Highly Confidential. Customer data is considered Highly Confidential and should be treated as such. In addition to the above classification scheme, members of Safety group have the additional requirements for protecting data that is attorney client privileged and only members of Safety should have access to it.
 - General -  Any content created in Office 365 needs to be labeled as “General”
 - Confidential - if any label is downgraded, a business justification must be provided.
 - Highly Confidential 
@@ -86,7 +86,7 @@ The legal team, and only the legal team, needs the same automatic labeling for c
 	    c) Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
 
 ### Part 2 -  Insider risk management
-Contoso Legal and HR have become very concerned about the threat posed by employees leaving the organization after an incident they had last year where a few employees left to start their own mortgage brokerage and took customer lists with them. Luckily, Contoso Mortgage found out due to one of the employees accidentally emailing a copy of the customer list they had stolen to someone still at Contoso. Legal and HR would like to be alerted to potentially risky behavior for employees who have given notice and may be taking part in. They would like to focus on data that contains customer data or content labeled Confidential or Higher. The only employee who has given notice in the past week has been Eric Gilmore.
+Contoso Leadership and Safety teams have become very concerned about the threat posed by employees leaving the organization after an incident they had last year where a few employees left to start their own mortgage brokerage and took customer lists with them. Luckily, Contoso found out due to one of the employees accidentally emailing a copy of the customer list they had stolen to someone still at Contoso. Leadership & Safety would like to be alerted to potentially risky behavior for employees who have given notice and may be taking part in. They would like to focus on data that contains customer data or content labeled Confidential or Higher. The only employee who has given notice in the past week has been Grady Archie.
 Success Criteria
 • Verify and implement the company’s classification scheme using sensitivity policies and labels.
 • Prevent sharing of company data with specified storage locations.
@@ -97,7 +97,7 @@ Success Criteria
 ## Challenge 4 - Microsoft 365 Defender
 
 **Scenario goal:** 
-Earlier, the CIO notified the CISO and team that they are currently working with vendors who will be helping evaluate the security team’s readiness to protect the company’s assets. Your team has already deployed a lab in Microsoft Defender for Endpoint to evaluate the product. The team now needs to become familiar with its capabilities and run simulations to see Microsoft Defender for Endpoint’s prevention, detection, and remediation features in action.
+Earlier, the CIO notified the CISO and team that they are currently working with vendors who will be helping evaluate the security team’s readiness to protect the company’s assets. Your team needs to deploy a lab in Microsoft Defender for Endpoint to evaluate the product. The team now needs to become familiar with its capabilities and run simulations to see Microsoft Defender for Endpoint’s prevention, detection, and remediation features in action.
 
 The team must run an attack delivered by SafeBreach that simulates techniques such as malware infection, data collection and modification of registry keys. This simulated attack should be run against one of the deployed evaluation lab virtual machines.
 
@@ -150,7 +150,7 @@ Success Criteria
 
 ## Challenge 6 - Identity Governance
 
-**Scenario goal:** Configure access reveiws on all guest users in the tenants to ensure no guests have extended access to resources when they no longer need them. Create an access package to allow internal users to request access to a set of Teams with an audited approval process.
+**Scenario goal:** Configure access reviews on all guest users in the tenants to ensure no guests have extended access to resources when they no longer need them. Create an access package to allow internal users to request access to a set of Teams with an audited approval process.
 
 ### General
 
