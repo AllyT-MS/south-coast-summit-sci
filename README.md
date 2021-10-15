@@ -94,7 +94,7 @@ Success Criteria
 • Create new insider risk policies.
 
 
-## Challenge 4 - Microsoft 365 Defender
+## Challenge 5 - Microsoft 365 Defender
 
 **Scenario goal:** 
 Earlier, the CIO notified the CISO and team that they are currently working with vendors who will be helping evaluate the security team’s readiness to protect the company’s assets. Your team needs to deploy a lab in Microsoft Defender for Endpoint to evaluate the product. The team now needs to become familiar with its capabilities and run simulations to see Microsoft Defender for Endpoint’s prevention, detection, and remediation features in action.
@@ -121,7 +121,7 @@ In addition to the goals above the following MUST also be met:
 - Your users should receive spam notifications every 3 days.
 - Users should be protected from common attachment types.
 
-## Challenge 5 - Endpoint Management
+## Challenge 6 - Endpoint Management
 
 **Scenario goal:** The company has transitioned from the more traditional work-from-office approach to remote workers. Although working from home or working remotely gives employees more flexibility throughout the day, it does present additional security concerns for the company. The company cannot control the employee’s home network nor can it deny network access to other devices that may be present on someone’s home network. With the proliferation of IoT devices in homes, potential access vectors for bad actors to infiltrate company assets increases with every newly deployed smart device.
 
@@ -148,7 +148,7 @@ Success Criteria
 • Create an access control policy to protect Office 365 apps.
 • Enroll test laptop (ask coach to borrow one) in device management.
 
-## Challenge 6 - Identity Governance
+## Challenge 7 - Identity Governance
 
 **Scenario goal:** Configure access reviews on all guest users in the tenants to ensure no guests have extended access to resources when they no longer need them. Create an access package to allow internal users to request access to a set of Teams with an audited approval process.
 
