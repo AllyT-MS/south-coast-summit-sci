@@ -40,11 +40,13 @@ The idea is to share knowledge and ask questions, make your team mates aware of 
 In addition to the scenario goal it MUST also meet the following criteria:
 - All accounts must have multi-factor authentication enabled
 - Passwords should not be set to expire
-- Enforce MFA for users assigned the Password Administrators role.
+- Enforce MFA for users assigned the Security Administrators role.
+- All users should accept a "Terms of Use agreement" when accessing any applications outside a trusted location.
 - The "Sales & Marketing" group should be allowed to work from anywhere but enforce MFA if not at a trusted location. 
-- The "Leadership" group -  These members can only log on from trusted locations. 
+- The "Leadership" group -  These members can only log on from trusted locations
+- The "Sales & Marketing" group MUST NOT have access Office 365 applications from IOS or Android devices
 - Use an Identity Protection policy to enforce password change when any users risk level is set to Medium or High. If students cannot simulate a risk event to trigger this rule, then at least check that they have the policy configured on PIM.
-- Privileged Identity Management must be configured to assign the "Password Administrator" role to Lee Gu, but their default role is User as observed in their profile.- 
+- Privileged Identity Management must be configured to assign the "Security Administrator" role to Lee Gu, but their default role is User as observed in their profile. (e.g Role is only used when required - Just in Time) This role should be available for a maximum of 2 hours, and a reason to elevate privilege must be provided. Approval from manager for each request is NOT required.
 
 Helpful notes
 - When testing the conditional access policies, team members can impersonate the volunteer users.
@@ -63,6 +65,18 @@ In addition to the scenario goal it MUST also meet the following criteria:
 
 Helpful notes
 - When testing the access packages it is useful to have people signed in as each role to ensure the approval process works as intended
+
+### Part 3 - Single Sign-on for an Enterprise Application - NB. THIS TASK WILL MIGHT TAKE A FEW HOURS
+**Scenario goal:** Configure a cloud app for single signon.
+
+### General
+
+Using the Azure AD SAML toolkit:
+- Enable SSO via Azure AD to the SAML Toolkit
+
+Helpful notes
+- If you already have an application that you want to intergrate to the test tenant such as Facebook developer, twitter developer, GCP, AWS etc you can use that instead. - See here - https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/tutorial-list
+- https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/saml-toolkit-tutorial
 
 ## Challenge 3 - Microsoft Purview - Compliance
 
@@ -109,7 +123,7 @@ Success Criteria
 • Create new insider risk policies.
 
 
-## Challenge 5 - Microsoft 365 Defender
+## Challenge 4 - Microsoft 365 Defender
 
 **Scenario goal:** 
 Earlier, the CIO notified the CISO and team that they are currently working with vendors who will be helping evaluate the security team’s readiness to protect the company’s assets. Your team needs to deploy a lab in Microsoft Defender for Endpoint to evaluate the product. The team now needs to become familiar with its capabilities and run simulations to see Microsoft Defender for Endpoint’s prevention, detection, and remediation features in action.
@@ -136,7 +150,7 @@ In addition to the goals above the following MUST also be met:
 - Your users should receive spam notifications every 3 days.
 - Users should be protected from common attachment types.
 
-## Challenge 6 - Endpoint Management
+## Challenge 5 - Endpoint Management
 
 **Scenario goal:** The company has transitioned from the more traditional work-from-office approach to remote workers. Although working from home or working remotely gives employees more flexibility throughout the day, it does present additional security concerns for the company. The company cannot control the employee’s home network nor can it deny network access to other devices that may be present on someone’s home network. With the proliferation of IoT devices in homes, potential access vectors for bad actors to infiltrate company assets increases with every newly deployed smart device.
 
