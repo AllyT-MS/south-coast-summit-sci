@@ -1,4 +1,4 @@
-# Welcome to the SCI Hack Challenge @ South Coast Summit  
+# Welcome to the SCI Hack Challenge @ South Coast Summit  October 2022
 ----------------------------------------------------------------------------------------------------
 
 ![image](https://github.com/AllyT-MS/south-coast-summit-sci/blob/main/scs.png)
