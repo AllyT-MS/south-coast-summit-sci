@@ -32,7 +32,7 @@ The idea is to share knowledge and ask questions, make your team mates aware of 
 
 ## Challenge 2 - Identity & Access Management
 
-### Part 1 - Privledged Identity & Conditional Access
+### Part 1 - Privileged Identity & Conditional Access
 **Scenario goal:** Configure conditional access policies to support different security group requirements based on business rules. Configure privileged identity management rules to elevate permissions only when necessary. Establish alerting for risky sign in behavior and enforce a password change policy for sign ins identified as Medium or High.
 
 ### General
@@ -157,7 +157,7 @@ In addition to the goals above the following MUST also be met:
 Contoso is moving from their traditional on-premises based device hygiene and management system to their already licensed Microsoft Endpoint Manager integrated endpoint management platform. Microsoft Intune in Endpoint Manager will be used for the mobile device and application management of Windows, macOS, iOS, and Android devices. 
 The initial focus will be on company purchased hardware that has been issued to the employees and Windows devices in particular. All Windows devices will eventually be enrolled in Microsoft Intune automatically.
 
-Allan Deyoung will be delviering the EndPoint Manager features so will need to be given appropriate permissions, including being a member of the Help Desk group. He will lead the team to help test the planned Windows devices’ automatic enrollment and compliance configurations before including all employees in automatic enrollment.
+Allan Deyoung will be delivering the EndPoint Manager features so will need to be given appropriate permissions, including being a member of the Help Desk group. He will lead the team to help test the planned Windows devices’ automatic enrollment and compliance configurations before including all employees in automatic enrollment.
 
 Prior to launching simulated attacks, the CISO wants the team to integrate Microsoft Defender for Endpoint with Microsoft Intune as a mobile threat defense solution
 
