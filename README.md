@@ -13,15 +13,15 @@ Most teams will **not** complete all the challenges within the time available. T
 
 Contoso are a fictitious company who showcase the future of SCI. You are reporting to the CIO (in this case the coaches in the room)
 
-**Step 1 - Select a challenge (Complete challenge 1 then any order)**
-There are multiple distinct challenges set out within the South Coast Summit Hackathon case study. The focus of these challenges is to learn new skills, ask questions and learn about Zero Trust, Microsoft Entra (Identity), Microsoft 365 Defender and Microsoft Purview (Compliance).
+1. **Select a challenge (Complete challenge 1 then any order)** - There are multiple distinct challenges set out within the South Coast Summit Hackathon case study. The focus of these challenges is to learn new skills, ask questions and learn about Zero Trust, Microsoft Entra (Identity), Microsoft 365 Defender and Microsoft Purview (Compliance).
 
-**Step 2 - Learn together**
-The idea is to share knowledge and ask questions, make your team mates aware of your level of knowledge when it comes to the particular task or tasks at hand and try to chip in as much as possible and remember no questions are silly questions.
+	Also think about what you might be currently doing or planning to do in your own organisation, or what you think should be recommended to be done.
 
-**Step 3 - Show the coaches what you have impleneted before moving onto next challenge**
+2. **Learn together** - The idea is to share knowledge and ask questions, make your team mates aware of your level of knowledge when it comes to the particular task or tasks at hand and try to chip in as much as possible and remember no questions are silly questions.
 
-**Step 4 - Be creative and have fun!**
+3. **Show the coaches what you have impleneted before moving onto next challenge**
+
+4. **Be creative and have fun!**
 
 ## Challenge 1 - General Security - Microsoft 356 Secure Score
 
@@ -33,10 +33,10 @@ The idea is to share knowledge and ask questions, make your team mates aware of 
 ## Challenge 2 - Identity & Access Management
 
 ### Part 1 - Privileged Identity & Conditional Access
-**Scenario goal:** Configure conditional access policies to support different security group requirements based on business rules. Configure privileged identity management rules to elevate permissions only when necessary. Establish alerting for risky sign in behavior and enforce a password change policy for sign ins identified as Medium or High.
+**Scenario goal:** 
+Configure conditional access policies to support different security group requirements based on business rules. Configure privileged identity management rules to elevate permissions only when necessary. Establish alerting for risky sign in behavior and enforce a password change policy for sign ins identified as Medium or High.
 
-### General
-
+**General:**
 In addition to the scenario goal it MUST also meet the following criteria:
 - All accounts must have multi-factor authentication enabled
 - Passwords should not be set to expire
@@ -48,40 +48,41 @@ In addition to the scenario goal it MUST also meet the following criteria:
 - Use an Identity Protection policy to enforce password change when any users risk level is set to Medium or High. If students cannot simulate a risk event to trigger this rule, then at least check that they have the policy configured on PIM.
 - Privileged Identity Management must be configured to assign the "Security Administrator" role to Lee Gu, but their default role is User as observed in their profile. (e.g Role is only used when required - Just in Time) This role should be available for a maximum of 2 hours, and a reason to elevate privilege must be provided. Approval from manager for each request is NOT required.
 
-Helpful notes
+**Helpful notes**
 - When testing the conditional access policies, team members can impersonate the volunteer users.
 - Trusted locations defined with at least one IP address of a trusted location to sign in from. One of the public IP addresses of a team member is an example of a trusted location access.  
 
 ### Part 2 - Identity Governance
-**Scenario goal:** Configure access reviews on all guest users in the tenants to ensure no guests have extended access to resources when they no longer need them. Create an access package to allow internal users to request access to a set of Teams with an audited approval process.
+**Scenario goal:** 
+Configure access reviews on all guest users in the tenants to ensure no guests have extended access to resources when they no longer need them. Create an access package to allow internal users to request access to a set of Teams with an audited approval process.
 
-### General
-
+**General:**
 In addition to the scenario goal it MUST also meet the following criteria:
 - If a review is not received for guest users, their access should be revoked
 - All internal employees should be able to request access to the access package
 - Users' line managers should provide the first level of approval
 - Named HR users should provide the second level of approval
 
-Helpful notes
+**Helpful notes:**
 - When testing the access packages it is useful to have people signed in as each role to ensure the approval process works as intended
 
 ### Part 3 - Single Sign-on for an Enterprise Application - NB. THIS TASK WILL MIGHT TAKE A FEW HOURS
-**Scenario goal:** Configure a cloud app for single signon.
+**Scenario goal:** 
+Configure a cloud app for single signon.
 
-### General
-
+**General**
 Using the Azure AD SAML toolkit:
 - Enable SSO via Azure AD to the SAML Toolkit
 
-Helpful notes
+**Helpful notes:**
 - If you already have an application that you want to intergrate to the test tenant such as Facebook developer, twitter developer, GCP, AWS etc you can use that instead. - See here - https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/tutorial-list
 - https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/saml-toolkit-tutorial
 
 ## Challenge 3 - Microsoft Purview - Compliance
 
 ### Part 1 - Compliance Manager
-**Scenario goal:** The team must work together to identify necessary compliance improvement actions and implement the actions where possible. The Compliance manager in Microsoft 365 assessments will be used to identify the improvement actions. As Contoso has offices within the UK and EU it must meet the EU GDPR regulations and UK Cyber Essentials.
+**Scenario goal:**
+The team must work together to identify necessary compliance improvement actions and implement the actions where possible. The Compliance manager in Microsoft 365 assessments will be used to identify the improvement actions. As Contoso has offices within the UK and EU it must meet the EU GDPR regulations and UK Cyber Essentials.
 
 Each team should select three improvement actions whose control maps to the appropriate assessments. If this is not possible, choose the improvement actions that have two or more.  
 The team will:
@@ -90,41 +91,37 @@ The team will:
 - Update the implementation status and test status.
 - Verify remediation has been updated in the assessment.  
 
-
 The points achieved should increase as improvement actions are completed and the status updated.
 If there is a delay with the new assessments being run you can choose the Data Protection Baseline and implement actions from this instead.   
 The team will report their finding to the coaches
 
-
 ### Part2 - Information Protection and Governance + Insider Risk Management
-
-**Scenario goal:** So far, your team has been able to address some of the security and compliance concerns and implemented improvements to increase Contoso's protective posture. The CIO is concerned about customer data not being properly handled and being exfiltrated from the organization, both intentionally and unintentionally. This data is composed of PII, bank account information, and credit card information.The CISO has directed your team to institute policies to help with the labeling of content. Any content created in Office 365 needs to be labeled as “General” and, if any label is downgraded, a business justification must be provided. If any content contains customer data, it must be automatically labeled as “Highly Confidential” and needs to be visibly marked as such. 
+**Scenario goal:** 
+So far, your team has been able to address some of the security and compliance concerns and implemented improvements to increase Contoso's protective posture. The CIO is concerned about customer data not being properly handled and being exfiltrated from the organization, both intentionally and unintentionally. This data is composed of PII, bank account information, and credit card information.The CISO has directed your team to institute policies to help with the labeling of content. Any content created in Office 365 needs to be labeled as “General” and, if any label is downgraded, a business justification must be provided. If any content contains customer data, it must be automatically labeled as “Highly Confidential” and needs to be visibly marked as such. 
 The safety team, and only the safety team, needs the same automatic labeling for customer content available to them. They also need the ability to manually mark content as Attorney Client Privilege. Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
 
-### Section A - Protection and Governance
+#### Section A - Protection and Governance
 - Your team must implement measures designed to protect the company’s data and mark it in accordance with company policy.
 - The company has a documented data classification scheme of Public, General, Confidential, and Highly Confidential. Customer data is considered Highly Confidential and should be treated as such. In addition to the above classification scheme, members of Safety group have the additional requirements for protecting data that is attorney client privileged and only members of Safety should have access to it.
 - General -  Any content created in Office 365 needs to be labeled as “General”
 - Confidential - if any label is downgraded, a business justification must be provided.
 - Highly Confidential 
-    • If any label is downgraded, a business justification must be provided.
-	• Highly Confidential” and needs to be visibly marked as such. 
-	• Attorney Client Privilege 
-        a) additional requirements for protecting data that is attorney client privileged and only members of Legal should have access to it.
-	    b) if any label is downgraded, a business justification must be provided.
-	    c) Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
+	- If any label is downgraded, a business justification must be provided.
+	- Highly Confidential” and needs to be visibly marked as such. 
+	- Attorney Client Privilege 
+		- additional requirements for protecting data that is attorney client privileged and only members of Legal should have access to it.
+		- if any label is downgraded, a business justification must be provided.
+		- Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
 
-### Section B -  Insider risk management
+#### Section B -  Insider risk management
 Contoso Leadership and Safety teams have become very concerned about the threat posed by employees leaving the organization after an incident they had last year where a few employees left to start their own mortgage brokerage and took customer lists with them. Luckily, Contoso found out due to one of the employees accidentally emailing a copy of the customer list they had stolen to someone still at Contoso. Leadership & Safety would like to be alerted to potentially risky behavior for employees who have given notice and may be taking part in. They would like to focus on data that contains customer data or content labeled Confidential or Higher. The only employee who has given notice in the past week has been Grady Archie.
 Success Criteria
-• Verify and implement the company’s classification scheme using sensitivity policies and labels.
-• Prevent sharing of company data with specified storage locations.
-• Data loss prevention policies created.
-• Create new insider risk policies.
-
+- Verify and implement the company’s classification scheme using sensitivity policies and labels.
+- Prevent sharing of company data with specified storage locations.
+- Data loss prevention policies created.
+- Create new insider risk policies.
 
 ## Challenge 4 - Microsoft 365 Defender
-
 **Scenario goal:** 
 Earlier, the CIO notified the CISO and team that they are currently working with vendors who will be helping evaluate the security team’s readiness to protect the company’s assets. Your team needs to deploy a lab in Microsoft Defender for Endpoint to evaluate the product. The team now needs to become familiar with its capabilities and run simulations to see Microsoft Defender for Endpoint’s prevention, detection, and remediation features in action.
 
@@ -151,8 +148,8 @@ In addition to the goals above the following MUST also be met:
 - Users should be protected from common attachment types.
 
 ## Challenge 5 - Endpoint Management
-
-**Scenario goal:** The company has transitioned from the more traditional work-from-office approach to remote workers. Although working from home or working remotely gives employees more flexibility throughout the day, it does present additional security concerns for the company. The company cannot control the employee’s home network nor can it deny network access to other devices that may be present on someone’s home network. With the proliferation of IoT devices in homes, potential access vectors for bad actors to infiltrate company assets increases with every newly deployed smart device.
+**Scenario goal:** 
+The company has transitioned from the more traditional work-from-office approach to remote workers. Although working from home or working remotely gives employees more flexibility throughout the day, it does present additional security concerns for the company. The company cannot control the employee’s home network nor can it deny network access to other devices that may be present on someone’s home network. With the proliferation of IoT devices in homes, potential access vectors for bad actors to infiltrate company assets increases with every newly deployed smart device.
 
 Contoso is moving from their traditional on-premises based device hygiene and management system to their already licensed Microsoft Endpoint Manager integrated endpoint management platform. Microsoft Intune in Endpoint Manager will be used for the mobile device and application management of Windows, macOS, iOS, and Android devices. 
 The initial focus will be on company purchased hardware that has been issued to the employees and Windows devices in particular. All Windows devices will eventually be enrolled in Microsoft Intune automatically.
@@ -161,7 +158,7 @@ Allan Deyoung will be delivering the EndPoint Manager features so will need to b
 
 Prior to launching simulated attacks, the CISO wants the team to integrate Microsoft Defender for Endpoint with Microsoft Intune as a mobile threat defense solution
 
-### General
+**General:**
 The profile should be assigned to the Windows 10 Enterprise and Windows 10 Professional OS editions: the approved Windows desktop operating systems in the company. Additional configuration settings do not need to be configured.
 
 The team must also create compliance and conditional access policies for Windows 10 devices in Endpoint Manager.
@@ -169,25 +166,14 @@ The compliance policy will require Windows 10 devices to be at or under the mach
 
 The conditional access policy should control the testing groups access to Office 365 cloud apps when using modern authentication clients or legacy authentication clients. Access should require a device to be marked as compliant or when using multi-factor authentication. For now, the policy should only report violations and exclude non-Windows based devices.
 
-Success Criteria
-• Enable automatic enrollment of Windows devices.
-• Enable Microsoft Defender for Endpoint with Intune. 
-• Create a configuration profile to onboard devices into Microsoft Defender for Endpoint.
-• Create a compliance policy for Windows devices that enforces company compliance requirements.
-• Create an access control policy to protect Office 365 apps.
-• Enroll test laptop (ask coach to borrow one) in device management.
-
-
+**Success Criteria:**
+- Enable automatic enrollment of Windows devices.
+- Enable Microsoft Defender for Endpoint with Intune. 
+- Create a configuration profile to onboard devices into Microsoft Defender for Endpoint.
+- Create a compliance policy for Windows devices that enforces company compliance requirements.
+- Create an access control policy to protect Office 365 apps.
+- Enroll test laptop (ask coach to borrow one) in device management.
 
 Link to this repo - https://aka.ms/scs-sci-repo
 
 Feedback form - https://aka.ms/scs-predayscifeedback
-
-
-
-
-
-
-
-
-
