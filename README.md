@@ -23,7 +23,7 @@ Contoso are a fictitious company who showcase the future of SCI. You are reporti
 
 4. **Be creative and have fun!**
 
-## Challenge 1 - General Security - Microsoft 356 Secure Score
+## Challenge 1 - General Security - Microsoft 365 Secure Score
 
 **Scenario goal:** Discuss the identified Microsoft 365 Secure Score improvements and implement the corrective actions to meet the goals below:
 - Identify the first 10-15 improvement actions found in your company’s Microsoft 365 Secure score.
@@ -78,48 +78,77 @@ Using the Azure AD SAML toolkit:
 - If you already have an application that you want to intergrate to the test tenant such as Facebook developer, twitter developer, GCP, AWS etc you can use that instead. - See here - https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/tutorial-list
 - https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/saml-toolkit-tutorial
 
-## Challenge 3 - Microsoft Purview - Compliance
+## Challenge 3 - Compliance Manager
+Scenario goal: The team must work together to identify necessary compliance improvement actions and implement the measures where possible. The Compliance manager in Microsoft 365 assessments will determine the improvement actions. Contoso has offices within the UK and EU and must meet the EU GDPR and the GDPR.
+Each team should select three improvement actions whose control maps to the appropriate assessments. If this is not possible, choose the improvement actions with two or more.
 
-### Part 1 - Compliance Manager
-**Scenario goal:**
-The team must work together to identify necessary compliance improvement actions and implement the actions where possible. The Compliance manager in Microsoft 365 assessments will be used to identify the improvement actions. As Contoso has offices within the UK and EU it must meet the EU GDPR regulations and UK Cyber Essentials.
-
-Each team should select three improvement actions whose control maps to the appropriate assessments. If this is not possible, choose the improvement actions that have two or more.  
 The team will:
-- Discover within the assesment which actions are Microsoft's responsibility
-- Implement the corrections and test.
-- Update the implementation status and test status.
-- Verify remediation has been updated in the assessment.  
+•	Discover within the assessment which actions are Microsoft's responsibility.
+•	Using Challenge 4 below to implement the required controls and report the evidence into the Compliance Manager tool.
+•	Apply controls that will improve the compliance posture of the M365 tenant.
+•	Implement the corrections and test.
+•	Update the implementation status and test status.
+•	Verify that remediation has been updated in the assessment and test the implemented controls.
+The points achieved should increase as improvement actions are completed, and the status is updated. If there is a delay with the new assessments being run, you can choose the Data Protection Baseline and implement actions from this instead.
 
-The points achieved should increase as improvement actions are completed and the status updated.
-If there is a delay with the new assessments being run you can choose the Data Protection Baseline and implement actions from this instead.   
-The team will report their finding to the coaches
+The team will report their finding to the coaches.
 
-### Part2 - Information Protection and Governance + Insider Risk Management
-**Scenario goal:** 
-So far, your team has been able to address some of the security and compliance concerns and implemented improvements to increase Contoso's protective posture. The CIO is concerned about customer data not being properly handled and being exfiltrated from the organization, both intentionally and unintentionally. This data is composed of PII, bank account information, and credit card information.The CISO has directed your team to institute policies to help with the labeling of content. Any content created in Office 365 needs to be labeled as “General” and, if any label is downgraded, a business justification must be provided. If any content contains customer data, it must be automatically labeled as “Highly Confidential” and needs to be visibly marked as such. 
-The safety team, and only the safety team, needs the same automatic labeling for customer content available to them. They also need the ability to manually mark content as Attorney Client Privilege. Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
+** Challenge 4 - Information Protection and Governance + Insider Risk Management + Secure Sharing** 
+Scenario goal:  Your team has been asked by the CISO to implement controls that will significantly impact the organisation’s compliance posture and are looking to execute these improvement actions. 
 
-#### Section A - Protection and Governance
-- Your team must implement measures designed to protect the company’s data and mark it in accordance with company policy.
-- The company has a documented data classification scheme of Public, General, Confidential, and Highly Confidential. Customer data is considered Highly Confidential and should be treated as such. In addition to the above classification scheme, members of Safety group have the additional requirements for protecting data that is attorney client privileged and only members of Safety should have access to it.
-- General -  Any content created in Office 365 needs to be labeled as “General”
-- Confidential - if any label is downgraded, a business justification must be provided.
-- Highly Confidential 
-	- If any label is downgraded, a business justification must be provided.
-	- Highly Confidential” and needs to be visibly marked as such. 
-	- Attorney Client Privilege 
-		- additional requirements for protecting data that is attorney client privileged and only members of Legal should have access to it.
-		- if any label is downgraded, a business justification must be provided.
-		- Additionally, if the content contains the keyword ACP, it will automatically be labeled Attorney Client Privilege.
+The CISO is concerned about customer data not being correctly handled and exfiltrated outside the organisation, both intentionally and unintentionally. 
+This data is composed of Personal Identifiable Information (PII), bank account information, and credit card information.
+The CISO has directed your team to institute policies aligned with the GDPR and data protection baseline to identify and label content. 
 
-#### Section B -  Insider risk management
-Contoso Leadership and Safety teams have become very concerned about the threat posed by employees leaving the organization after an incident they had last year where a few employees left to start their own mortgage brokerage and took customer lists with them. Luckily, Contoso found out due to one of the employees accidentally emailing a copy of the customer list they had stolen to someone still at Contoso. Leadership & Safety would like to be alerted to potentially risky behavior for employees who have given notice and may be taking part in. They would like to focus on data that contains customer data or content labeled Confidential or Higher. The only employee who has given notice in the past week has been Grady Archie.
-Success Criteria
-- Verify and implement the company’s classification scheme using sensitivity policies and labels.
-- Prevent sharing of company data with specified storage locations.
-- Data loss prevention policies created.
-- Create new insider risk policies.
+You will look to set up a series of top-level labels such as: 
+•	“General” and, if any label is downgraded, a business justification must be provided. 
+•	Confidential - if any label is downgraded, a business justification must be provided. A header and footer should be applied automatically with the label name.
+•	If any content contains customer data, it must be automatically labelled as “Highly Confidential” and needs to be visibly marked as such. If any label is downgraded, a business justification must be provided.
+•	Content that looks like a CV or new starter form (once filled out) must be appropriately labelled and restricted so only the HR team can open it. 
+Alongside data in Microsoft 365, the Contoso organisation also uses BOX (BOX.com) as one of its corporate repositories. You will also need to scan, discover and label content that equals the requirements above. 
+
+** Part 1 - Protection and Governance** 
+•	Your team must implement measures designed to protect the company’s data and mark it in accordance with company policy.
+•	The company has a documented data classification scheme of Public, General, Confidential, and Highly Confidential. Customer data that resides within the EU is considered Highly Confidential and should not leave the organisation. 
+•	In addition to the above classification scheme, HR members have the additional requirements for protecting staff data that contains resume or new starter forms once filled out, and only HR members should have access to it.
+•	Data also resides in BOX (box.com), where this company data also needs to conform to this governance framework.
+
+(Task hints: You can create a free BOX developer account for this task: https://developer.box.com/) 
+Stretched goal (optional):
+
+Set up and test a policy that will quarantine and move data away from inside BOX and OneDrive that contains credit card information (this data shouldn’t be stored in these locations in Contoso). 
+Ensure that these policies alert security admins via Teams and allow only them to access this information ready for investigation.  The more information they have, the better the evidence.
+Update and evidence in the relevant control within the Compliance Manager.
+
+** Part 2 - Insider risk management** 
+Contoso Leadership and data protection teams have become very concerned about the threat posed by employees leaving the organisation after a recent incident where a previous employee took customer lists with them. Luckily, Contoso found out that one of the employees accidentally emailed a copy of the customer list they had stolen to someone still at Contoso. 
+Leadership & data protection would like to be alerted to potentially risky behaviour for employees who have given notice and performing unusual exfiltration behaviours. They would like to focus on data that contains customer data or content labelled Confidential or Higher. 
+The only employee who has given notice in the past week has been Grady Archie.
+Success Criteria:
+•	Verify and implement the company’s classification scheme using sensitivity policies and labels.
+•	Prevent sharing of company data with specified storage locations.
+•	Implement Data loss prevention policies and create new insider risk policies to monitor them.
+•	Update the relevant controls within the Compliance Manager.
+
+** Stretched goal (optional):** 
+Evidence of how the activities and behaviours can include the monitoring for potential access of risky websites where employees are looking to download possible malware or illegal software.
+
+** Part 3 – Secure sharing of confidential data** 
+There’s always a balance between security, compliance, and productivity. Now that your team has implemented the necessary controls to monitor and prevent new starter forms from being shared, your HR team's feedback is that they cannot share new starter information with an external partner for payroll. 
+You will need to maintain security, compliance, and monitoring for this information that will be shared with your partner “Payroll4U.com”. 
+Your team will discuss the possible options on how best to share information with them.
+
+** Success Criteria:** 
+Implement change controls in accordance with your GDPR and data protection baseline in Compliance Manager.
+Test the relevant controls and set up monitoring, so the security teams have a report once a day if more than 20 instances are shared in one go by a staff member.
+Data must be encrypted and labelled to ensure correct data handling.
+No other 3rd party apart from Payroll4U should be able to read the new starter forms. 
+
+** Stretched goal (optional):** 
+Consider how new starter forms (once filled out) can be shared back to the new staff’s private Gmail (Google mail) accounts securely, set up and test the process.
+Update the relevant controls within the Compliance Manager.
+
+
 
 ## Challenge 4 - Microsoft 365 Defender
 **Scenario goal:** 
