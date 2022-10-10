@@ -79,7 +79,7 @@ Using the Azure AD SAML toolkit:
 - https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/saml-toolkit-tutorial
 
 ## Challenge 3 - Compliance Manager
-Scenario goal: The team must work together to identify necessary compliance improvement actions and implement the measures where possible. The Compliance manager in Microsoft 365 assessments will determine the improvement actions. Contoso has offices within the UK and EU and must meet the EU GDPR and the GDPR.
+Scenario goal: The team must work together to identify necessary compliance improvement actions and implement the measures where possible. The Compliance manager in Microsoft 365 assessments will determine the improvement actions. Contoso has offices within the UK and EU and must meet the EU GDPR and data protection.
 Each team should select three improvement actions whose control maps to the appropriate assessments. If this is not possible, choose the improvement actions with two or more.
 
 The team will:
