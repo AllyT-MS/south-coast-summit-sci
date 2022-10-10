@@ -93,7 +93,7 @@ The points achieved should increase as improvement actions are completed, and th
 
 The team will report their finding to the coaches.
 
-##  Challenge 4 - Information Protection and Governance + Insider Risk Management + Secure Sharing** 
+##  Challenge 4 - Information Protection and Governance + Insider Risk Management + Secure Sharing
 
 Scenario goal:  Your team has been asked by the CISO to implement controls that will significantly impact the organisation’s compliance posture and are looking to execute these improvement actions. 
 
