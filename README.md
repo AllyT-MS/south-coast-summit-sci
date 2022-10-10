@@ -93,7 +93,8 @@ The points achieved should increase as improvement actions are completed, and th
 
 The team will report their finding to the coaches.
 
-** Challenge 4 - Information Protection and Governance + Insider Risk Management + Secure Sharing** 
+##  Challenge 4 - Information Protection and Governance + Insider Risk Management + Secure Sharing** 
+
 Scenario goal:  Your team has been asked by the CISO to implement controls that will significantly impact the organisation’s compliance posture and are looking to execute these improvement actions. 
 
 The CISO is concerned about customer data not being correctly handled and exfiltrated outside the organisation, both intentionally and unintentionally. 
@@ -107,7 +108,7 @@ You will look to set up a series of top-level labels such as:
 •	Content that looks like a CV or new starter form (once filled out) must be appropriately labelled and restricted so only the HR team can open it. 
 Alongside data in Microsoft 365, the Contoso organisation also uses BOX (BOX.com) as one of its corporate repositories. You will also need to scan, discover and label content that equals the requirements above. 
 
-** Part 1 - Protection and Governance** 
+**Part 1 - Protection and Governance**
 •	Your team must implement measures designed to protect the company’s data and mark it in accordance with company policy.
 •	The company has a documented data classification scheme of Public, General, Confidential, and Highly Confidential. Customer data that resides within the EU is considered Highly Confidential and should not leave the organisation. 
 •	In addition to the above classification scheme, HR members have the additional requirements for protecting staff data that contains resume or new starter forms once filled out, and only HR members should have access to it.
@@ -120,37 +121,40 @@ Set up and test a policy that will quarantine and move data away from inside BOX
 Ensure that these policies alert security admins via Teams and allow only them to access this information ready for investigation.  The more information they have, the better the evidence.
 Update and evidence in the relevant control within the Compliance Manager.
 
-** Part 2 - Insider risk management** 
+**Part 2 - Insider risk management** 
+
 Contoso Leadership and data protection teams have become very concerned about the threat posed by employees leaving the organisation after a recent incident where a previous employee took customer lists with them. Luckily, Contoso found out that one of the employees accidentally emailed a copy of the customer list they had stolen to someone still at Contoso. 
 Leadership & data protection would like to be alerted to potentially risky behaviour for employees who have given notice and performing unusual exfiltration behaviours. They would like to focus on data that contains customer data or content labelled Confidential or Higher. 
 The only employee who has given notice in the past week has been Grady Archie.
+
 Success Criteria:
 •	Verify and implement the company’s classification scheme using sensitivity policies and labels.
 •	Prevent sharing of company data with specified storage locations.
 •	Implement Data loss prevention policies and create new insider risk policies to monitor them.
 •	Update the relevant controls within the Compliance Manager.
 
-** Stretched goal (optional):** 
+**Stretched goal (optional):** 
 Evidence of how the activities and behaviours can include the monitoring for potential access of risky websites where employees are looking to download possible malware or illegal software.
 
-** Part 3 – Secure sharing of confidential data** 
+**Part 3 – Secure sharing of confidential data** 
 There’s always a balance between security, compliance, and productivity. Now that your team has implemented the necessary controls to monitor and prevent new starter forms from being shared, your HR team's feedback is that they cannot share new starter information with an external partner for payroll. 
 You will need to maintain security, compliance, and monitoring for this information that will be shared with your partner “Payroll4U.com”. 
 Your team will discuss the possible options on how best to share information with them.
 
-** Success Criteria:** 
+**Success Criteria:** 
 Implement change controls in accordance with your GDPR and data protection baseline in Compliance Manager.
 Test the relevant controls and set up monitoring, so the security teams have a report once a day if more than 20 instances are shared in one go by a staff member.
 Data must be encrypted and labelled to ensure correct data handling.
 No other 3rd party apart from Payroll4U should be able to read the new starter forms. 
 
-** Stretched goal (optional):** 
+**Stretched goal (optional):** 
 Consider how new starter forms (once filled out) can be shared back to the new staff’s private Gmail (Google mail) accounts securely, set up and test the process.
 Update the relevant controls within the Compliance Manager.
 
 
 
 ## Challenge 4 - Microsoft 365 Defender
+
 **Scenario goal:** 
 Earlier, the CIO notified the CISO and team that they are currently working with vendors who will be helping evaluate the security team’s readiness to protect the company’s assets. Your team needs to deploy a lab in Microsoft Defender for Endpoint to evaluate the product. The team now needs to become familiar with its capabilities and run simulations to see Microsoft Defender for Endpoint’s prevention, detection, and remediation features in action.
 
