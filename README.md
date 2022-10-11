@@ -115,7 +115,8 @@ Alongside data in Microsoft 365, the Contoso organisation also uses BOX (BOX.com
 •	Data also resides in BOX (box.com), where this company data also needs to conform to this governance framework.
 
 (Task hints: You can create a free BOX developer account for this task: https://developer.box.com/) 
-Stretched goal (optional):
+
+**Stretched goal (optional):**
 
 Set up and test a policy that will quarantine and move data away from inside BOX and OneDrive that contains credit card information (this data shouldn’t be stored in these locations in Contoso). 
 Ensure that these policies alert security admins via Teams and allow only them to access this information ready for investigation.  The more information they have, the better the evidence.
