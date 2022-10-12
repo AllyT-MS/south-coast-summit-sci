@@ -154,59 +154,47 @@ Update the relevant controls within the Compliance Manager.
 
 
 
-## Challenge 4 - Microsoft 365 Defender
-
-**Scenario goal:** 
-Earlier, the CIO notified the CISO and team that they are currently working with vendors who will be helping evaluate the security team’s readiness to protect the company’s assets. Your team needs to deploy a lab in Microsoft Defender for Endpoint to evaluate the product. The team now needs to become familiar with its capabilities and run simulations to see Microsoft Defender for Endpoint’s prevention, detection, and remediation features in action.
-
-The team must run an attack delivered by SafeBreach that simulates techniques such as malware infection, data collection and modification of registry keys. This simulated attack should be run against one of the deployed evaluation lab virtual machines.
-
-The team must run a simulated attack against a test device in the Microsoft Defender Security Center. Once complete, the team should be able to identify different elements of the attack. Additionally, the team must create one advanced hunting rule that identifies antivirus reports from a specific target device. 
+## Challenge 5 - Microsoft 365 Defender
 
 ### Part 1 - Defender for Endpoint
 
-After the simulation is complete, the team must identify any high severity incidents. The team must be able to answer the following questions:
-1. What categories does the incident fall under?
-2. Was there a payload or multiple payloads and what were they?
-3. If there was malware, what malware was identified?
-4. Can a hacker or bad actor group be identified? If so, who?
+**Scenario goal:** 
+Your team needs to deploy Microsoft Defender for Endpoint (MDE) using Microsoft Intune. You have identified two types of devices: high-risk and low-risk. High-risk devices should be configured with the most protection possible, but low-risk devices can have a lower acceptable security stance to ensure productivity.  The organisation's devices are only Windows. Some iOS BYOD devices are used.
+
+You must:
+- Enable MDE integration with Intune. 
+- Enable device onboarding with Intune for Windows.
+- Configure Endpoint Security Antivirus and Attack Surface Reduction policies that cater to high and low risk scenarios.
+- Configure app protection policies to confirm device health using MDE for iOS.
+- Configure compliance policies that check device health using MDE for Windows.
 
 ### Part 2 - Defender for Office 365
-Contoso Mortgage has had regular annual cyber security training for its employees for nearly three years. In the past, the CIO has chosen not to use any in-house or third-party email-based attack simulations and relied on the online training to educate employees. With most employees now working remotely, this is being reconsidered. Your team must use the available attack simulator feature to execute simulated attacks. Using the two spear phishing attacks, launch an attack targeting members of your team. After team members receive the emails, review the messages, and brief the team on identified items that should alert the recipient of danger. Be prepared to explain your findings to the CISO. Additionally, each one of the attack messages’ payloads should be triggered for the team to understand the simulated attack experience. The CISO is okay with the team creating their own templates or using the built-in templates.
 
-In addition to the goals above the following MUST also be met:
-- The organization should be protected from malicious content in email attachments and files in SharePoint, OneDrive, and Microsoft Teams 
-- Messages with attachments should be immediately delivered while the attachments are scanned.
-- Phishing thresholds should be set to at least 2. 
-- Your users should receive spam notifications every 3 days.
-- Users should be protected from common attachment types.
-
-## Challenge 5 - Endpoint Management
 **Scenario goal:** 
-The company has transitioned from the more traditional work-from-office approach to remote workers. Although working from home or working remotely gives employees more flexibility throughout the day, it does present additional security concerns for the company. The company cannot control the employee’s home network nor can it deny network access to other devices that may be present on someone’s home network. With the proliferation of IoT devices in homes, potential access vectors for bad actors to infiltrate company assets increases with every newly deployed smart device.
 
-Contoso is moving from their traditional on-premises based device hygiene and management system to their already licensed Microsoft Endpoint Manager integrated endpoint management platform. Microsoft Intune in Endpoint Manager will be used for the mobile device and application management of Windows, macOS, iOS, and Android devices. 
-The initial focus will be on company purchased hardware that has been issued to the employees and Windows devices in particular. All Windows devices will eventually be enrolled in Microsoft Intune automatically.
+Your organisation is migrating from a third-party email protection platform to Exchange Online Protection (EOP) and Microsoft Defender for Office 365 (MDO). You have been tasked with achieving the following objectives:
 
-Allan Deyoung will be delivering the EndPoint Manager features so will need to be given appropriate permissions, including being a member of the Help Desk group. He will lead the team to help test the planned Windows devices’ automatic enrollment and compliance configurations before including all employees in automatic enrollment.
+- The organization should be protected from malicious content in email attachments and files in SharePoint, OneDrive, and Microsoft Teams 
+- URLs and their clicks should be trackable and scanned at the time of click.
+- Messages with attachments should be detonated in the cloud prior to any mail delivery. 
+- Spam should only be available from the quarantine, which users can release.
+- Your users should receive quarantine notifications every 3 days.
+- Users should be protected from common attachment types but also MP3 and MP4 files.
 
-Prior to launching simulated attacks, the CISO wants the team to integrate Microsoft Defender for Endpoint with Microsoft Intune as a mobile threat defense solution
 
-**General:**
-The profile should be assigned to the Windows 10 Enterprise and Windows 10 Professional OS editions: the approved Windows desktop operating systems in the company. Additional configuration settings do not need to be configured.
+### Part 3 - Defender for Cloud Apps
 
-The team must also create compliance and conditional access policies for Windows 10 devices in Endpoint Manager.
-The compliance policy will require Windows 10 devices to be at or under the machine risk score of High. If a device is not compliant, it should be marked as such immediately. The policy should be assigned to the testing group that Larry is a member of.
+**Scenario goal:** 
 
-The conditional access policy should control the testing groups access to Office 365 cloud apps when using modern authentication clients or legacy authentication clients. Access should require a device to be marked as compliant or when using multi-factor authentication. For now, the policy should only report violations and exclude non-Windows based devices.
+Your organisation has never had a cloud access security broker (CASB) but are interested in using MDA to discover shadow IT and control the SaaS estate. Using MDA, you should work towards the following objectives:
 
-**Success Criteria:**
-- Enable automatic enrollment of Windows devices.
-- Enable Microsoft Defender for Endpoint with Intune. 
-- Create a configuration profile to onboard devices into Microsoft Defender for Endpoint.
-- Create a compliance policy for Windows devices that enforces company compliance requirements.
-- Create an access control policy to protect Office 365 apps.
-- Enroll test laptop (ask coach to borrow one) in device management.
+- If a new OAuth app with high level of permissions but low worldwide prevalence is added to the tenant, administrators should be alerted. 
+- If a new file-sharing web app is detected on Windows 10 devices, it should be blocked until an administrator explicitly allows it.
+- If files with ransomware-like extensions are detected in OneDrive for Business or SharePoint Online, the uploading user should have their account access blocked.
+- If internal users access Office 365 web apps from BYOD devices, their sessions should block all downloads.
+- If guests access Office 365 web apps, their sessions should block all downloads unless they have a certificate issued by your organisation.
+
+
 
 Link to this repo - https://aka.ms/scs-sci-repo
 
