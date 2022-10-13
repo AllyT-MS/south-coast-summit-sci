@@ -157,6 +157,10 @@ Update the relevant controls within the Compliance Manager.
 
 ## Challenge 5 - Microsoft 365 Defender
 
+**IMPORTANT**
+
+For these tasks, you are only expected to conduct the cloud-side and portal-based configurations.  For example, you will not have access to any devices, but create the policies and assign them to empty groups. 
+
 ### Part 1 - Defender for Endpoint
 
 **Scenario goal:** 
