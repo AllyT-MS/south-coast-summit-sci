@@ -115,6 +115,7 @@ Alongside data in Microsoft 365, the Contoso organisation also uses BOX (BOX.com
 •	Data also resides in BOX (box.com), where this company data also needs to conform to this governance framework.
 
 (Task hints: You can create a free BOX developer account for this task: https://developer.box.com/) 
+(Task hints 2: You will need some dummy data in your content to trigger on, could try something like: https://generatedata.com/)
 
 **Stretched goal (optional):**
 
